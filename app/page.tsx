@@ -73,11 +73,12 @@ export default function HomePage() {
 
           {posts.length > 0 ? (
             <div className="grid gap-px border border-white/10 bg-white/10 md:grid-cols-2">
-              {posts.map((post, index) => (
-                <Link
-                  key={post.slug}
-                  href={`/blog/${post.slug}`}
-                  className="group bg-[#0b1120] p-7 transition duration-300 hover:bg-[#111c31] md:p-10"
+             {posts.map((post, index) => (
+  <Link
+    key={post.slug}
+    href={`/blog/${post.slug}`}
+    className="group bg-[#0b1120] p-7 transition duration-300 hover:bg-[#111c31] md:p-10"
+  >
                 >
                   <div className="mb-10 flex items-center justify-between text-xs text-white/40">
                     <span>0{index + 1} / JOURNAL</span>

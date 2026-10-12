@@ -1,4 +1,4 @@
-```tsx
+
 import Link from "next/link";
 import { getSortedPosts } from "@/lib/posts";
 
@@ -113,4 +113,4 @@ export default function HomePage() {
     </main>
   );
 }
-```
+

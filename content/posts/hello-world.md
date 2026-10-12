@@ -1,20 +1,18 @@
 ---
-title: "Halo Dunia"
-excerpt: "Artikel pertama saya di blog personal."
+title: "Blooming Begins"
+excerpt: "A small beginning, a beautiful unfolding."
 date: "2026-10-12"
-author: "Nama Kamu"
+author: "Novia"
 ---
 
-# Halo Dunia
+# Blooming Begins
 
-Selamat datang di blog saya.
+Welcome to my little corner of the internet.
 
-Ini adalah artikel pertama saya. Di blog ini, saya akan menulis tentang:
-- pengalaman belajar
-- proyek yang sedang dikerjakan
-- teknologi yang saya pelajari
-- ide dan refleksi harian
+This space is where I gather thoughts, stories, and the small things that make life feel meaningful.
 
-> Tulis apa yang kamu pelajari, karena itu akan berguna di masa depan.
+A curious mind collecting stories, little wonders, and thoughts along the way.
 
-Semoga blog ini bisa jadi tempat catatan dan inspirasi.
+> Just living, learning, and blooming. ☀️
+
+I hope this blog becomes a place for reflection, growth, and a soft kind of joy.

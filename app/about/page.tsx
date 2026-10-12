@@ -7,16 +7,14 @@ export default function AboutPage() {
         <Link href="/" className="text-sm font-medium text-violet-600">
           ← Kembali
         </Link>
-        <h1 className="mt-6 text-4xl font-bold text-slate-900">Tentang Saya</h1>
+        <h1 className="mt-6 text-4xl font-bold text-slate-900">About Novia</h1>
 
         <p className="mt-6 text-lg leading-8 text-slate-700">
-          Saya adalah seorang pembelajar dan penulis yang suka membagikan pengalaman,
-          pemikiran, dan proyek yang sedang saya kerjakan.
+          A curious mind collecting stories, little wonders, and thoughts along the way.
         </p>
 
         <p className="mt-4 text-lg leading-8 text-slate-700">
-          Blog ini dibuat untuk mencatat cerita, teknologi, dan hal-hal kecil yang
-          saya pelajari setiap hari.
+          Just living, learning, and blooming. ☀️
         </p>
       </div>
     </main>

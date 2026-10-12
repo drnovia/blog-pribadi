@@ -2,8 +2,8 @@ import "./globals.css";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog Saya",
-  description: "Blog pribadi untuk menulis ide, pengalaman, dan karya.",
+  title: "Novia, in Bloom",
+  description: "A life unfolding, beautifully.",
 };
 
 export default function RootLayout({

@@ -13,7 +13,7 @@ export default function HomePage() {
               Blog
             </p>
             <h1 className="mt-2 text-4xl font-bold text-slate-900">
-              Nama Kamu
+              Novia
             </h1>
           </div>
           <nav className="flex gap-6 text-sm font-medium text-slate-700">
@@ -24,10 +24,10 @@ export default function HomePage() {
 
         <section className="mb-12 rounded-2xl bg-white p-8 shadow-soft">
           <p className="mb-3 text-sm uppercase tracking-[0.2em] text-violet-600">
-            Halo, saya
+            Novia, in Bloom
           </p>
           <h2 className="max-w-2xl text-3xl font-bold text-slate-900">
-            Menulis tentang teknologi, pengalaman, dan ide yang terus berkembang.
+            A life unfolding, beautifully.
           </h2>
         </section>
 

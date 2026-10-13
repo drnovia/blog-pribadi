@@ -1,10 +1,12 @@
 import Link from "next/link";
 import { getSortedPosts } from "@/lib/posts";
+import AboutMotion from "./AboutMotion";
 
 export default function HomePage() {
   const posts = getSortedPosts();
 
   return (
+    <AboutMotion>
     <main className="min-h-screen bg-[#030d1a] text-white">
       <div className="mx-auto max-w-6xl px-6 py-8 md:px-10">
         <header className="mb-8 flex items-center justify-between rounded-full border border-white/10 bg-white/5 px-5 py-3 backdrop-blur">
@@ -20,20 +22,20 @@ export default function HomePage() {
         <section className="relative overflow-hidden rounded-[32px] border border-white/10 bg-[radial-gradient(circle_at_top,_rgba(99,102,241,0.18),_transparent_45%),linear-gradient(135deg,#071321,#0d1729_35%,#142537_100%)] p-6 shadow-[0_30px_80px_rgba(2,6,23,0.8)] md:p-10">
           <div className="grid items-center gap-10 md:grid-cols-[1.2fr_0.8fr]">
             <div>
-              <p className="mb-4 inline-flex items-center rounded-full border border-[#ffd966]/30 bg-[#ffd966]/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-[#f9d976]">
+              <p data-anim="hero" className="mb-4 inline-flex items-center rounded-full border border-[#ffd966]/30 bg-[#ffd966]/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-[#f9d976]">
                 Novia, in Bloom
               </p>
-              <h1 className="max-w-xl text-4xl font-black tracking-[-0.05em] text-white md:text-6xl">
+              <h1 data-anim="hero" className="max-w-xl text-4xl font-black tracking-[-0.05em] text-white md:text-6xl">
                 A life unfolding,
                 <span className="block bg-gradient-to-r from-white via-violet-200 to-sky-300 bg-clip-text text-transparent">
                   beautifully.
                 </span>
               </h1>
-              <p className="mt-5 max-w-lg text-base leading-7 text-slate-300 md:text-lg">
+              <p data-anim="hero" className="mt-5 max-w-lg text-base leading-7 text-slate-300 md:text-lg">
                 A curious mind collecting stories, little wonders, and thoughts along the way.
               </p>
 
-              <div className="mt-7 flex flex-wrap gap-3">
+              <div data-anim="hero" className="mt-7 flex flex-wrap gap-3">
                 {[
                   "stories",
                   "ideas",
@@ -50,7 +52,7 @@ export default function HomePage() {
                 ))}
               </div>
 
-              <div className="mt-8 flex flex-wrap gap-4">
+              <div data-anim="hero" className="mt-8 flex flex-wrap gap-4">
                 <Link
                   href="#posts"
                   className="rounded-full bg-[#f5d76a] px-5 py-3 text-sm font-semibold text-slate-900 shadow-[0_10px_30px_rgba(245,215,106,0.35)] transition hover:-translate-y-0.5"
@@ -66,7 +68,7 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="rounded-[28px] border border-white/10 bg-[#0b1521]/80 p-4 shadow-[0_20px_60px_rgba(0,0,0,0.45)] backdrop-blur-xl">
+            <div data-anim="panel" className="rounded-[28px] border border-white/10 bg-[#0b1521]/80 p-4 shadow-[0_20px_60px_rgba(0,0,0,0.45)] backdrop-blur-xl">
               <div className="flex items-center justify-between border-b border-white/10 pb-3">
                 <div className="flex items-center gap-2">
                   <span className="h-3 w-3 rounded-full bg-[#ff5f56]" />
@@ -77,11 +79,11 @@ export default function HomePage() {
               </div>
 
               <div className="mt-5 space-y-3 font-mono text-sm text-slate-200">
-                <div className="text-slate-400">[22:48:12] <span className="text-violet-300">Startup</span></div>
-                <div><span className="text-emerald-400">novia@bloom</span> <span className="text-sky-300">~/notes</span> <span className="text-slate-400">%</span> journal --daily</div>
-                <div className="text-slate-300">Collecting tiny joys, sharp lessons, and bright ideas.</div>
-                <div className="text-slate-400">[22:48:14] <span className="text-purple-300">Status:</span> feeling grateful, growing, blooming.</div>
-                <div className="text-violet-300">Ready to share what I learn.</div>
+                <div data-anim="log" className="text-slate-400">[22:48:12] <span className="text-violet-300">Startup</span></div>
+                <div data-anim="log"><span className="text-emerald-400">novia@bloom</span> <span className="text-sky-300">~/notes</span> <span className="text-slate-400">%</span> journal --daily</div>
+                <div data-anim="log" className="text-slate-300">Collecting tiny joys, sharp lessons, and bright ideas.</div>
+                <div data-anim="log" className="text-slate-400">[22:48:14] <span className="text-purple-300">Status:</span> feeling grateful, growing, blooming.</div>
+                <div data-anim="log" className="text-violet-300">Ready to share what I learn.</div>
               </div>
             </div>
           </div>
@@ -100,6 +102,7 @@ export default function HomePage() {
               <Link
                 key={post.slug}
                 href={`/blog/${post.slug}`}
+                data-anim="card"
                 className="group rounded-[28px] border border-white/10 bg-white/5 p-6 transition duration-300 hover:-translate-y-1 hover:border-violet-400/40 hover:bg-white/7"
               >
                 <p className="text-sm text-slate-400">{post.date}</p>
@@ -114,5 +117,6 @@ export default function HomePage() {
         </section>
       </div>
     </main>
+    </AboutMotion>
   );
 }

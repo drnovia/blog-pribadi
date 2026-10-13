@@ -28,6 +28,13 @@ a {
   text-decoration: none;
 }
 
+/* Hidden until GSAP reveals it (app/about/AboutMotion.tsx); prevents a flash before hydration. */
+@media (prefers-reduced-motion: no-preference) {
+  [data-anim] {
+    visibility: hidden;
+  }
+}
+
 ::selection {
   background: #e8d89e;
   color: #3f463b;
